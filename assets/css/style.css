@@ -67,15 +67,67 @@ html {
 
 .icon__font {
     display: inline-block;
-    padding-left: 7px;
+    padding-left: 5px;
 }
 
 .css__icon {
     font-size: 16px;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .css__icon--size {
     font-size: 16px;
 
 }
+
+.list__header--qr-code {
+    position: relative;
+}
+
+.navbar__qrcode {
+    display: none;
+    position: absolute;
+    min-width: 190px;
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    padding-bottom: 12px;
+    padding-top: 6px;
+    top: 25px;
+    border-radius: 3px;
+
+}
+
+.qr-code {
+    padding: 0 16px;
+    margin-bottom: 7px;
+}
+
+.qr-icon {
+    font-size: 182px;
+}
+
+.app-download {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0px 16px;
+    
+}
+
+.app-download-item {
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 14px;
+    color: rgb(133, 121, 121);
+    margin: 3px;
+}
+
+.app__download--icon {
+    font-size: 13px;
+}
+
+.list__header li:hover .navbar__qrcode {
+    display: block;
+}
+
